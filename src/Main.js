@@ -1,0 +1,17 @@
+"use strict";
+exports.__esModule = true;
+var Animal_1 = require("./Animal");
+var Animal_2 = require("./Animal");
+var Home_1 = require("./Home");
+var cat = new Animal_1.Cat("Stormy");
+cat.eat("Food");
+cat.sound("Meows");
+console.log("-------------------");
+var dog = new Animal_2.Dog("Rax");
+dog.eat("Food");
+dog.sound("Barks");
+var home = new Home_1.Home();
+var dog1 = new Animal_2.Dog("Rax");
+home.makeAllSound();
+home.adoptPet(dog1);
+home.makeAllSound();
